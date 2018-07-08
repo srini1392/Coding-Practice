@@ -1,10 +1,21 @@
 #include <stdio.h>
 #include <math.h>
 
-int binarySearch(int [],int,int);
+int binarySearch(int[],int,int);
 
+int main()
+{
 
-int binarySearch(int list[], int item[],int len)
+	int myList[] ={1,3,5,7,9};
+	int len = sizeof(myList) / sizeof(myList[0]);
+
+	printf("%d\n", binarySearch(myList, 3,len));
+	printf("%d\n", binarySearch(myList,-1,len));
+	return 0;
+
+}
+
+int binarySearch(int list[], int item,int len)
 {
 	int low =0;
 	int high = len;
@@ -28,16 +39,5 @@ int binarySearch(int list[], int item[],int len)
 	return -1; //if number is not found
 }
 
-int main()
-{
-
-	int myList[] ={1,3,5,7,9};
-	int len = sizeof(myList) / sizeof(myList[0]);
-
-	printf("%d\n", binarySearch(myList, 3,len));
-	printf("%d\n", binarySearch(myList,-1,len));
-	return 0;
-
-}
 
 
