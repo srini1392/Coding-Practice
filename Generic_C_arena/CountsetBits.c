@@ -20,4 +20,9 @@ int main()
 	printf("enter the number: ");
 	scanf("%d",&num);
 	printf("the set bits count is %d",countsetbits(num));
+	if (countsetbits(num)>1)
+		printf("\n not power of 2");
+	else 
+		printf("\n is power of 2");
+		
 }
