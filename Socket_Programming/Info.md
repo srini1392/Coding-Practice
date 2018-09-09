@@ -16,7 +16,6 @@ Common networking protocols like HTTP,TCP-IP,UDP all sit above sockets to help i
             _||_                                                               _||_
             \  /                                                               \  /
              \/                                                                 \/
-
      _ _ _ _ _ _ _ _ _ _ _                                             _ _ _ _ _ _ _ _ _ _ _
     |                     |                                           |                     |
     |      connect()      |                                           |      bind()         |
@@ -27,7 +26,6 @@ Common networking protocols like HTTP,TCP-IP,UDP all sit above sockets to help i
             _||_                                                               _||_
             \  /                                                               \  /
              \/                                                                 \/
-
      _ _ _ _ _ _ _ _ _ _ _                                             _ _ _ _ _ _ _ _ _ _ _
     |                     |                                           |                     |
     |       recv()        |                                           |      listen()       |
@@ -38,7 +36,6 @@ Common networking protocols like HTTP,TCP-IP,UDP all sit above sockets to help i
                                                                                _||_
                                                                                \  /
                                                                                 \/
-
                                                                        _ _ _ _ _ _ _ _ _ _ _
                                                                       |                     |
                                                                       |     accept()        |

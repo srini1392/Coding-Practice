@@ -6,6 +6,7 @@ unsigned int countsetbits (int n)
 	unsigned int count =0;
 	while (n)
 	{
+		//perform and on itself with (n-1), loop exits based on number of set bits
 		n = n&(n-1);
 		count++;
 	}

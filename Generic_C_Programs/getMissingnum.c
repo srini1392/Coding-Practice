@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/* Time complexity of o(n)*/
+/* Time complexity of o(n)
+	calculate total first by using Summation formula = (n+1)(n+2)/2, then subtract each number to find missing*/
 int getMissingNum(int a[],int n){
 
 	int total, i;

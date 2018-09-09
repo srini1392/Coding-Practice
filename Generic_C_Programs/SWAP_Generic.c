@@ -18,7 +18,7 @@ int main()
     char *kitty = strdup("Mew");
 
     printf("%s, %s\n", puppy, kitty);
-    swap(&puppy, &kitty, sizeof(char *));
+    swap1(&puppy, &kitty, sizeof(char *));
     printf("%s, %s\n", puppy, kitty);
 
     free(puppy);
@@ -28,6 +28,15 @@ int main()
 }
 
 
+void swap1(void *a, void *b, size_t width)
+{
+    void *temp = malloc(width);
+    memcpy(temp, b, width);
+    memcpy(b, a, width);
+    memcpy(a, temp, width);
+    free(temp);
+
+}
 
 
 

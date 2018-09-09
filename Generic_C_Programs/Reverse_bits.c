@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/*
+/* Loop through all the bits of an integer. If a bit at ith position is set in the i/p no. then set the bit at (NO_OF_BITS – 1) – i in o/p. 
+Where NO_OF_BITS is number of bits present in the given number.*/
 unsigned int reverseBits(unsigned int num)
 {
     unsigned int  NO_OF_BITS = sizeof(num) * 8;
@@ -15,7 +16,6 @@ unsigned int reverseBits(unsigned int num)
 }
 
 
-*/
 unsigned int reverseBits(unsigned int n)
 {
     unsigned int rev = 0;

@@ -37,6 +37,7 @@ int abscompare(int a, int b){
 	else return -1;
 }
 
+//Bubblesort alogrithm, which accepts the array, sizeofarray and ranking function as inputs
 void bubble_sort(int *A,int n, int (*compare)(int,int))
 {
 
@@ -51,6 +52,7 @@ void bubble_sort(int *A,int n, int (*compare)(int,int))
 		}
 }
 
+//main driver function
 int main() 
 {
 	int i;

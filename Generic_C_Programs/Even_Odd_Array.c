@@ -30,7 +30,8 @@
                 k++;
             }
         }
- 
+
+        //spit out the arrays with even and odd integers separately 
         printf("The elements of OAR are ");
         for (i = 0; i < k; i++)
         {

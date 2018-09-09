@@ -15,7 +15,7 @@ int main(){
 	return 0;
 
 }
-
+//square root logic
 int squareroot(int n){
 	
 	if (0 == n | 1 == n)
