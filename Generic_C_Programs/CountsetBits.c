@@ -10,7 +10,7 @@ unsigned int countsetbits (int n)
 		n = n&(n-1);
 		count++;
 	}
-	return count;
+	// return count;
 }
 
 

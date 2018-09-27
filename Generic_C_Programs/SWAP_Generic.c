@@ -17,9 +17,16 @@ int main()
     char *puppy = strdup("Wow");
     char *kitty = strdup("Mew");
 
-    printf("%s, %s\n", puppy, kitty);
-    swap1(&puppy, &kitty, sizeof(char *));
-    printf("%s, %s\n", puppy, kitty);
+    int a = 10, b = 20;
+    int *ptr1 = &a;
+    int *ptr2 = &b;
+
+    // printf("%s, %s\n", puppy, kitty);
+    printf("%d, %d\n", a, b);
+    // swap1(&puppy, &kitty, sizeof(char *));
+    swap1(ptr1, ptr2, sizeof(int *));
+    // printf("%s, %s\n", puppy, kitty);
+    printf("%d, %d\n", a, b);
 
     free(puppy);
     free(kitty);
