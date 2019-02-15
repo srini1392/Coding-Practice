@@ -50,7 +50,10 @@ void deleteNode(struct Node**head_ref, int key){
     }
 
     //if key was not present in linkedlist
-    if(temp == NULL) return;
+    if(temp == NULL){
+        printf("\nthe key is not present in linkedList");
+        return;
+        }
 
     //unlink the node from linkedlist
     prev->next = temp->next;
@@ -82,7 +85,7 @@ int main(){
     
     puts("\ncreated a linkedlist");
     printList(head);
-    deleteNode(&head,3);
+    deleteNode(&head,8);
     puts("\n linkedlist after deletion of node");
     printList(head);
 
