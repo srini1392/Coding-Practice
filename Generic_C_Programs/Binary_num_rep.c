@@ -13,7 +13,7 @@ void bin(unsigned n)
 /*Main driver function to find the binary representation of an integer*/
 int main(void)
 {
-    bin(7);
+    bin(7);//function call
     printf("\n");
     bin(4);
 }
