@@ -20,7 +20,7 @@ int twosum (int arr[], int n, int targetSum){
         //start from the i'th element till last element
         for( j = i+1 ; j<n; j++){
 
-            //if desired sume is found, print and return it
+            //if desired sum is found, print and return it
             if (arr[i]+arr[j] == targetSum){
 
                 printf("pair found at index %d and %d",i,j);
